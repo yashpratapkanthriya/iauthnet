@@ -4,7 +4,7 @@
   "description": "iauthnet ",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --hot --open --config webpack.dev.js",
+    "start": "webpack-dev-server  --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js"
   },
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/yashpratapkanthriya/iauthnet#readme",
   "dependencies": {
-    "alertify": "github:OriginProtocol/alertify.js#webpack_friendly",
+    "alertify": "^0.3.0",
     "alertifyjs": "^1.11.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.0",
@@ -37,10 +37,13 @@
     "jquery": "^3.3.1",
     "lodash": "^4.17.5",
     "path": "^0.12.7",
+    "popper.js": "^1.14.3",
+    "postcss-loader": "^2.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.0.1",
     "react-prop-types": "^0.4.0",
+    "react-router": "latest",
     "react-router-dom": "^4.2.2",
     "semantic-ui-react": "^0.77.1"
   },

@@ -84,7 +84,7 @@ a:hover {
     display: inline-block;
     width: 70px;
     height: 22px;
-    background-image: url(/images/card-sold-tag.svg);
+    background-image: url(../images/card-sold-tag.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 58px 20px;
@@ -144,7 +144,7 @@ a:hover {
     vertical-align: middle;
     width: 25px;
 
-    background-image: url(/images/arrow.svg);
+    background-image: url(../images/arrow.svg);
     background-position: 40%;
     background-repeat: no-repeat;
 }
@@ -198,7 +198,7 @@ a:hover {
 
 .progress-circle.checked {
     background-color: var(--greenblue);
-    background-image: url(/images/checkmark-white.svg);
+    background-image: url(../images/checkmark-white.svg);
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -908,7 +908,7 @@ a:hover {
     border: solid 1px var(--dark-grey-blue);
     background-color: var(--dark-grey-blue);
     color: white;
-    background-image: url(/images/checkmark-green.svg);
+    background-image: url(../images/checkmark-green.svg);
     background-repeat: no-repeat;
     background-position: 97% 50%;
     background-size: 18px 18px;
@@ -940,7 +940,7 @@ label[for=root_pictures] {
     padding: 10px 10px 10px 35px;
     width: 100%;
     color: var(--dusk);
-    background-image: url(/images/camera-icon.svg);
+    background-image: url(../images/camera-icon.svg);
     background-repeat: no-repeat;
     background-position: 10px 50%;
     background-size: 18px 15px;
@@ -1496,7 +1496,7 @@ label[for=root_pictures]:hover {
 }
 
 .profile-wrapper .icon-container.info {
-    background-image: url(/images/info-icon-inactive.svg);
+    background-image: url(../images/info-icon-inactive.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1504,11 +1504,11 @@ label[for=root_pictures]:hover {
 /* image preloader to avoid flicker on hover */
 .profile-wrapper .icon-container.info:after {
     display: none;
-    content: url(/images/info-icon-active.svg);
+    content: url(../images/info-icon-active.svg);
 }
 
 .profile-wrapper .icon-container.info:hover {
-    background-image: url(/images/info-icon-active.svg);
+    background-image: url(../images/info-icon-active.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1579,7 +1579,7 @@ label[for=root_pictures]:hover {
 }
 
 .profile-wrapper .service.verified .icon-container:last-of-type {
-    background-image: url(/images/verified-icon.svg);
+    background-image: url(../images/verified-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
 }

@@ -5,7 +5,7 @@ import NavBar from './header'
 const Layout = ({children}) => (
     <Fragment>
         <main>
-            <NavBar/>
+           <NavBar/>
             {children}
         </main>
         <Footer/>
