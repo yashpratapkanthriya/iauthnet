@@ -28,8 +28,9 @@ class NavBar extends Component {
                     </button>
                     <Link to="/" className="navbar-brand mr-auto mr-lg-3">
                         <div className="logo-container">
-                            <img src={require("../../images/origin-logo.png")}
+                            <img src={require("../../images/ilogo-low.jpg")}
                                  srcSet="images/origin-logo@2x.png 2x, images/origin-logo@3x.png 3x"
+                                 style={{width: 100}}
                                  className="origin-logo" alt="Origin Protocol" />
                         </div>
                     </Link>

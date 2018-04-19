@@ -5,7 +5,7 @@ import {hot} from 'react-hot-loader'
 
 import Layout from "./layout"
 import ScrollToTop from './scroll-to-top'
-
+import Login from './login'
 import '../../css/pure-min.css'
 import '../../css/lato-web.css'
 import '../../css/poppins.css'
@@ -34,6 +34,9 @@ const HomePage = (props) => {
     )
 }
 
+const LoginPage = () => (
+    <Login/>
+)
 
 const App = (props) => (
     <Router>
@@ -41,6 +44,7 @@ const App = (props) => (
             <Layout>
                 <Switch>
                     <Route exact path="/" component={HomePage}/>
+                    <Route path="/login" component={LoginPage} />
                 </Switch>
             </Layout>
         </ScrollToTop>
