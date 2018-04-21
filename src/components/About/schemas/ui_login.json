@@ -1,0 +1,26 @@
+{
+  "name": {
+    "ui:autofocus": true,
+    "ui:emptyValue": "",
+    "ui:placeholder": "Enter email Address"
+  },
+  "email": {
+    "ui:widget": "email",
+    "ui:placeholder": "Enter email Address"
+  },
+  "password": {
+    "ui:widget": "password",
+    "ui:help": "Hint: Make it strong!",
+    "ui:placeholder": "Enter email Address"
+  },
+  "password2": {
+    "ui:widget": "password",
+    "ui:placeholder": "Enter email Address"
+  },
+  "phone": {
+    "ui:placeholder": "Choose an option",
+    "ui:options": {
+      "inputType": "tel"
+    }
+  }
+}
