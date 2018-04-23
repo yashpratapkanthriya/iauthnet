@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "email",
+    "phone",
+    "password"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Username",
+      "minLength": 4,
+      "maxLength": 50
+    },
+    "email": {
+      "type": "string",
+      "title": "Email",
+      "format": "email",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "password": {
+      "type": "string",
+      "title": "Password",
+      "minLength": 3,
+      "maxLength": 12
+    },
+    "password2": {
+      "type": "string",
+      "title": "Repeat Password",
+      "minLength": 3,
+      "maxLength": 12
+    },
+    "phone": {
+      "type": "integer",
+      "title": "Phone",
+      "minLength": 3,
+      "maxLength": 2
+    }
+  }
+}

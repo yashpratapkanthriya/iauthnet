@@ -1,15 +1,18 @@
 import React from 'react'
 import {BrowserRouter as Router, Link, Route, Switch,} from 'react-router-dom'
 import {hot} from 'react-hot-loader'
-
+/* Layouts*/
 import Layout from "./layout"
 import ScrollToTop from './scroll-to-top'
 import Login from './login'
+import Signup from './signup'
+/* CSS Files*/
 import '../../css/pure-min.css'
 import '../../css/lato-web.css'
 import '../../css/poppins.css'
 import '../../css/app.css'
-
+import '../../css/appStyle.css'
+/* JS // JQuery Files*/
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'
 import 'popper.js/dist/umd/popper'
@@ -36,6 +39,10 @@ const HomePage = (props) => {
 const LoginPage = (props) => (
     <Login/>
 )
+const SignupPage = (props) => (
+    <Signup/>
+)
+
 
 const App = (props) => (
     <Router>
@@ -44,6 +51,7 @@ const App = (props) => (
                 <Switch>
                     <Route exact path="/" component={HomePage}/>
                     <Route path="/login" component={LoginPage} />
+                    <Route path="/signup" component={SignupPage} />
                 </Switch>
             </Layout>
         </ScrollToTop>

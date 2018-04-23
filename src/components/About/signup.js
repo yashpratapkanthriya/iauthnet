@@ -4,7 +4,7 @@ import Form from 'react-jsonschema-form'
 
 const log = (type) => console.log.bind(console, type);
 
-class Login extends Component {
+class Signup extends Component {
 
     render() {
         function validate(formData, errors) {
@@ -19,10 +19,9 @@ class Login extends Component {
                 <div className="d-flex loginContainer">
                     <div style={{width: 350}}>
                         <Form
-                            schema={require('./schemas/login.json')}
-                            uiSchema={require('./schemas/ui_login.json')}
+                            schema={require('./schemas/signup.json')}
+                            uiSchema={require('./schemas/ui_signup.json')}
                             liveValidate={false}
-                            showErrorList={true}
                             validate={validate}
                             onError={(errors) => console.log(`react-jsonschema-form in  errors: ${errors.length}`)}>
                             <div className="btn-container">
@@ -33,11 +32,11 @@ class Login extends Component {
                             </div>
                         </Form>
                     </div>
-                    <div className="d-flex flex-column">
-                        <p> Join our community</p>
-                        <Link to="/signup">
-                        <button type="button" className="btn btn-primary">Sign Up</button>
-                    </Link>
+                    <div className="d-flex">
+                        <p> Do you already have an account?</p>
+                        <Link to="/login">
+                        <button type="button" className="btn btn-primary">Sign in</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -45,4 +44,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default Signup

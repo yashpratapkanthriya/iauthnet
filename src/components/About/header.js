@@ -2,9 +2,6 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Notification from './notification'
 import data from '../../data'
-
-import i2x from '../../images/identicon@2x.png'
-import i3x from '../../images/identicon@3x.png'
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 class NavBar extends Component {
@@ -35,13 +32,11 @@ class NavBar extends Component {
                         </div>
                     </Link>
                     <div className="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search Listings" aria-label="Search" onChange={this.handleChange} value={this.state.searchQuery} />
-                        </form>
+
                         <div className="navbar-nav justify-content-end">
-                            <Link to="/my-purchases" className="nav-item nav-link">My Purchases</Link>
-                            <Link to="/my-listings" className="nav-item nav-link">My Listings</Link>
-                            <Link to="/create" className="nav-item nav-link"><img src={require("../../images/add-listing-icon.svg")} alt="Add Listing" className="add-listing" />Add Listing</Link>
+                            <Link to="/" className="nav-item nav-link">About</Link>
+                            <Link to="/login" className="nav-item nav-link">Login</Link>
+                            <Link to="/signup" className="nav-item nav-link">Sign Up</Link>
                         </div>
                     </div>
                     <div className="static navbar-nav order-1 order-lg-2">
@@ -68,43 +63,6 @@ class NavBar extends Component {
                                     <footer>
                                         <Link to="/notifications">View All</Link>
                                     </footer>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="nav-item identity dropdown">
-                            <a className="nav-link active dropdown-toggle" id="identityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src={require("../../images/identicon.png")}
-                                     srcSet={`${i2x} 2x,${i3x} 3x`}
-                                     className="identicon" alt="Identicon" />
-                            </a>
-                            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="identityDropdown">
-                                <div className="triangle-container"><div className="triangle"></div></div>
-                                <div className="actual-menu">
-                                    <div className="wallet">
-                                        <div className="d-flex">
-                                            <div className="image-container">
-                                                <Link to="/profile">
-                                                    <img src={require("../../images/identicon.png")}
-                                                         srcSet={`${i2x} 2x,${i3x} 3x`}
-                                                         alt="wallet icon" />
-                                                </Link>
-                                            </div>
-                                            <div>
-                                                <p><Link to="/profile">ETH Address:</Link></p>
-                                                <p><Link to="/profile"><strong>0x32Be343B94f860124dC4fEe278FDCBD38C102D88</strong></Link></p>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div className="d-flex">
-                                            <div className="avatar-container">
-                                                <Link to="/profile"><img src={require("../../images/avatar-blue.svg")} alt="avatar" /></Link>
-                                            </div>
-                                            <div className="identification">
-                                                <p><Link to="/profile">Aure Gimon</Link></p>
-                                                <Link to="/profile"><img src={require("../../images/twitter-icon-verified.svg")} alt="Twitter verified icon" /></Link>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
