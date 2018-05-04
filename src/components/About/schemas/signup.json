@@ -26,12 +26,6 @@
       "minLength": 3,
       "maxLength": 12
     },
-    "password2": {
-      "type": "string",
-      "title": "Repeat Password",
-      "minLength": 3,
-      "maxLength": 12
-    },
     "phone": {
       "type": "integer",
       "title": "Phone",
