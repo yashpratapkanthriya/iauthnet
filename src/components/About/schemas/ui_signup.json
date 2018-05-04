@@ -2,7 +2,7 @@
   "name": {
     "ui:autofocus": true,
     "ui:emptyValue": "",
-    "ui:placeholder": "Enter Username"
+    "ui:placeholder": "Enter email Address"
   },
   "email": {
     "ui:widget": "email",
@@ -10,7 +10,11 @@
   },
   "password": {
     "ui:widget": "password",
-    "ui:help": "Choose Password Wisely. Because We don't believe in Forget Password Analogy.",
+    "ui:help": "Hint: Make it strong!",
+    "ui:placeholder": "Enter email Address"
+  },
+  "password2": {
+    "ui:widget": "password",
     "ui:placeholder": "Enter email Address"
   },
   "phone": {
