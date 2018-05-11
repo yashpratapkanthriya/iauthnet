@@ -37,14 +37,17 @@ const HomePage = (props) => {
 }
 
 const LoginPage = (props) => (
-    <Login/>
+<Login {...props} success={props.location.state.isTrue}/>
+
 )
 const SignupPage = (props) => (
     <Signup/>
 )
 
 
+
 const App = (props) => (
+
     <Router>
         <ScrollToTop>
             <Layout>

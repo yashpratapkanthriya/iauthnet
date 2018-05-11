@@ -5,31 +5,24 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.js',
+        profile: "./src/profile.js"
     },
     plugins: [
         // new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
+            hash: true,
             title: 'iAuthNet-Dev',
-            template: './dist/index.html'
-        })/*,
-        new webpack.ProvidePlugin({
-            jQuery: 'jquery',
-            $: 'jquery',
-            jquery: 'jquery',
-            Popper: ['popper.js', 'default'],
-            Alert: 'exports-loader?Alert!bootstrap/js/dist/alert',
-            Button: 'exports-loader?Button!bootstrap/js/dist/button',
-            Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
-            Collapse: 'exports-loader?Collapse!bootstrap/js/dist/collapse',
-            Dropdown: 'exports-loader?Dropdown!bootstrap/js/dist/dropdown',
-            Modal: 'exports-loader?Modal!bootstrap/js/dist/modal',
-            Popover: 'exports-loader?Popover!bootstrap/js/dist/popover',
-            Scrollspy: 'exports-loader?Scrollspy!bootstrap/js/dist/scrollspy',
-            Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
-            Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
-            Util: 'exports-loader?Util!bootstrap/js/dist/util'
-        })*/
+            template: './src/templates/index.html',
+            filename: './dist/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            title: 'My Awesome application',
+            template: './src/templates/profile.html',
+            chunks: ['profile'],
+            filename: './dist/profile.html'
+        })
     ],
     output: {
         filename: '[name].bundle.js',

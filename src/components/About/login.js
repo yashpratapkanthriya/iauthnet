@@ -6,6 +6,10 @@ const log = (type) => console.log.bind(console, type);
 
 class Login extends Component {
 
+    constructor(props){
+        super(props)
+    }
+
     render() {
         function validate(formData, errors) {
             if (formData.pass1 !== formData.pass2) {
@@ -17,6 +21,11 @@ class Login extends Component {
         return (
             <div className="container-fluid">
                 <div className="d-flex loginContainer">
+                    {this.props.isTrue &&
+                    <div className="alert alert-success" role="alert">
+                       SignUp Successful : Use your Username and Password to Login!
+                    </div>
+                    }
                     <div style={{width: 350}}>
                         <Form
                             schema={require('./schemas/login.json')}

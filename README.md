@@ -7,3 +7,5 @@
 *  Install : `npm install`
 
 * run : ` npm start`
+
+* [webpack-tut](https://medium.com/a-beginners-guide-for-webpack-2)
