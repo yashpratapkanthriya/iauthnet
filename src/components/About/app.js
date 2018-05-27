@@ -36,10 +36,20 @@ const HomePage = (props) => {
     )
 }
 
-const LoginPage = (props) => (
-<Login {...props} success={props.location.state.isTrue}/>
-
+const LoginPage = (props) => {
+    console.log("undefined -->||<--")
+    console.log(props.location.state+" <<--")
+if (!props.location.state){
+    console.log("undefined --><--")
+    var isTrue = false
+}else {
+        console.log(props.location.state.isTrue +" set value true")
+        var isTrue = props.location.state.isTrue
+}
+return(
+    <Login {...props} success={isTrue}/>
 )
+}
 const SignupPage = (props) => (
     <Signup/>
 )
